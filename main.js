@@ -62,3 +62,13 @@ let newFirstPet = pets.unshift('turtle')
 console.log('NewFirstPet:', pets);
 
 //14. .forEach()
+const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34] //our array
+numbers.forEach(addTwo)
+//using forEach on our numbers array and setting our function name
+function addTwo(num, index, arr) {
+  //building our function and passing in our parrameters
+  arr[index] = num + 2
+  //at each index in our array we will be getting the value of our items in array and adding 2 
+  console.log('sum = ', arr[index])
+  //logging our sum
+}
